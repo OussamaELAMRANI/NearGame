@@ -1,0 +1,21 @@
+<?php declare(strict_types=1);
+
+{% if api %}
+namespace App\Http\Api\Controller{{ namespace }};
+{% else %}
+namespace App\Http\Controller{{ namespace }};
+{% endif %}
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\{% if api %}JsonResponse{% else %}Response{% endif %};
+use Symfony\Component\Routing\Annotation\Route;
+
+class {{ class_name }} extends AbstractController
+{
+    /**
+     * @Route("/{{ class_name | lower }}", name="{{ sneak_case(class_name) }}")
+     */
+    public function index(): {% if api %}JsonResponse{% else %}Response{% endif %}
+    {}
+
+}
