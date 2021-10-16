@@ -16,6 +16,7 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
             - '../src/Tests/'
+            - '../src/Infrastructure/Migrations'
 
     App\Http\Controller\:
         resource: '../src/Http/Controller'
