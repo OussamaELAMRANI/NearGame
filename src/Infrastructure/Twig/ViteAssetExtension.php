@@ -89,7 +89,7 @@ class ViteAssetExtension extends AbstractExtension
     public function assetDev(string $entry, array $dep = []): string
     {
         $refresher = '';
-        if ($dep['react']) {
+        if (in_array('react', $dep)) {
             $refresher = '<script type="module">
                     import RefreshRuntime from "http://localhost:3000/assets/@react-refresh";
                     RefreshRuntime.injectIntoGlobalHook(window);

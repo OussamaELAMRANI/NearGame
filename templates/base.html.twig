@@ -11,7 +11,7 @@
 
         {% block javascripts %}
             {#{{ encore_entry_script_tags('app') }}#}
-            {{ vite_asset('main.tsx') }}
+            {{ vite_asset('main.tsx', ["react"]) }}
         {% endblock %}
     </head>
     <body>
