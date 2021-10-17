@@ -27,3 +27,10 @@
 /.php-cs-fixer.cache
 ###< friendsofphp/php-cs-fixer ###
 phpstan.neon
+
+### Build files
+public/assets
+
+
+#node packages
+node_modules/

@@ -25,3 +25,9 @@ services:
     App\Http\Controller\:
         resource: '../src/Http/Controller'
         tags: [ 'controller.service_arguments' ]
+
+    App\Infrastructure\Twig\ViteAssetExtension:
+        arguments:
+            $viteEnv: "%env(VITE_ENV)%"
+            $manifest: "%kernel.project_dir%/public/assets/manifest.json"
+            $cache: "@vite_cache_pool"

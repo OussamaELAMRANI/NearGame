@@ -1,5 +1,9 @@
 framework:
     cache:
+        pools:
+            vite_cache_pool:
+                adapter: cache.adapter.filesystem
+                default_lifetime: 0
         # Unique name of your app: used to compute stable namespaces for cache keys.
         #prefix_seed: your_vendor_name/app_name
 
