@@ -116,7 +116,6 @@ HTML;
      * @return string
      *                Get HTML tags
      *
-     * @throws \Psr\Cache\InvalidArgumentException
      */
     public function assetProd(string $entry, array $dep = []): string
     {
