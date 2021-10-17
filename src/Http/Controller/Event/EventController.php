@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace App\Http\Controller\Event;
 
@@ -15,5 +17,4 @@ class EventController extends AbstractController
     {
         return $this->json(['data' => 'Events'], Response::HTTP_OK);
     }
-
 }

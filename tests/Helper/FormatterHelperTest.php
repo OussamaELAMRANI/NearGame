@@ -7,10 +7,10 @@ use PHPUnit\Framework\TestCase;
 
 class FormatterHelperTest extends TestCase
 {
-    public function testSnackCase()
+    public function testSnackCase(): void
     {
-        $camelCase = "CamelCaseTest";
-        $sneakCase = "camel_case_test";
+        $camelCase = 'CamelCaseTest';
+        $sneakCase = 'camel_case_test';
 
         $this->assertEquals($sneakCase, FormatterHelper::toSneakCase($camelCase));
     }

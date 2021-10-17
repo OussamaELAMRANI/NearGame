@@ -10,7 +10,8 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
 /**
- * Custom Controller Maker to handle our project structure
+ * Custom Controller Maker to handle our project structure.
+ *
  * @command <yo:controller>
  *
  * @example ./bin/console yo:controller Director/To/YoController

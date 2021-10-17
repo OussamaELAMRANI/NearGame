@@ -18,13 +18,8 @@ class FormatterFunction extends AbstractExtension
         ];
     }
 
-    /**
-     * @param string $camelCase
-     * @return string
-     */
     public function toSneakCase(string $camelCase): string
     {
         return FormatterHelper::toSneakCase($camelCase);
     }
-
 }

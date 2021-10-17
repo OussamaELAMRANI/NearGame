@@ -4,15 +4,13 @@ namespace App\Helper;
 
 final class FormatterHelper
 {
-
     /**
-     *
-     *
-     * @param string $camelCase
-     * @return string
+     *  Format camelCase to sneak_case.
      */
     public static function toSneakCase(string $camelCase): string
     {
-        return ltrim(strtolower(preg_replace("/(?<!^)[A-Z]/", "_$0",$camelCase)));
+        $result = preg_replace('/(?<!^)[A-Z]/', '_$0', $camelCase);
+
+        return ltrim(strtolower(is_null($result) ? '' : $result));
     }
 }

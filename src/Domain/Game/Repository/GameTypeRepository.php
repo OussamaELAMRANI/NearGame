@@ -11,6 +11,8 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method GameType|null findOneBy(array $criteria, array $orderBy = null)
  * @method GameType[]    findAll()
  * @method GameType[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ *
+ * @extends ServiceEntityRepository<GameType>
  */
 class GameTypeRepository extends ServiceEntityRepository
 {
