@@ -88,7 +88,7 @@ class ViteAssetExtension extends AbstractExtension
      **/
     public function assetDev(string $entry, array $dep = []): string
     {
-        $refresher = "";
+        $refresher = '';
         if ($dep['react']) {
             $refresher = '<script type="module">
                     import RefreshRuntime from "http://localhost:3000/assets/@react-refresh";
