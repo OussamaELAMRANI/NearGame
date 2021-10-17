@@ -58,7 +58,7 @@ class ViteAssetExtension extends AbstractExtension
     /**
      * Load Assets for different mode.
      *
-     * @param string       $entry
+     * @param string $entry
      *                            File name
      * @param array<mixed> $dep
      *                            List of options
@@ -78,7 +78,7 @@ class ViteAssetExtension extends AbstractExtension
     /**
      * Load Assets for Dev mode.
      *
-     * @param string        $entry
+     * @param string $entry
      *                             File name
      * @param array<string> $dep
      *                             List of options
@@ -88,15 +88,21 @@ class ViteAssetExtension extends AbstractExtension
      **/
     public function assetDev(string $entry, array $dep = []): string
     {
-        $refresher = '<script type="module">
+        $refresher = '';
+        if ($dep['react']) {
+            $refresher = '<script type="module">
                     import RefreshRuntime from "http://localhost:3000/assets/@react-refresh";
                     RefreshRuntime.injectIntoGlobalHook(window);
                     window.$RefreshReg$ = () => {};
                     window.$RefreshSig$ = () => (type) => type;
                     window.__vite_plugin_react_preamble_installed__ = true;
                 </script>';
+        }
 
-        $html = <<<HTML
+
+        $html =
+
+            <<<HTML
                 <script type='module' src='http://localhost:3000/assets/@vite/client'></script>
                {$refresher}
                 <script type='module' src='http://localhost:3000/assets/{$entry}' defer></script>
@@ -108,14 +114,13 @@ HTML;
     /**
      * Load Assets for Dev mode.
      *
-     * @param string        $entry
+     * @param string $entry
      *                             File name
      * @param array<string> $dep
      *                             List of options
      *
      * @return string
      *                Get HTML tags
-     *
      */
     public function assetProd(string $entry, array $dep = []): string
     {
