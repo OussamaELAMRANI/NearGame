@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "baseUrl": "./assets",
+    "paths": {
+      "@/*": [
+        "app/*"
+      ]
+    },
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
@@ -16,5 +22,9 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["./assets/app"]
+  "include": [
+    "./assets/app/**/*.ts",
+    "./assets/app/**/*.d.ts",
+    "./assets/app/**/*.tsx",
+  ]
 }
