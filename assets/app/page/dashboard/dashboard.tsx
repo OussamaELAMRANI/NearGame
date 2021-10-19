@@ -5,7 +5,7 @@ import { NavSideBar } from "@/layout/side/NavSideBar";
 const dashboard = () => {
 
     return (<div className={'dashboard '}>
-        <h2>Dashboard</h2>
+        <h2 className={"text-2xl"}>Dashboard</h2>
         <div className="header">
             <Link to={"/admin"}>Admin page</Link>
             <Link to={"/admin/game-type"} > Game Type List</Link>
