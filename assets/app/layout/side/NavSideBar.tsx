@@ -1,7 +1,5 @@
 export const NavSideBar = () => {
-
-    return (<div>
+  return (<div>
         Sider Bar Menu !
-
     </div>)
 }

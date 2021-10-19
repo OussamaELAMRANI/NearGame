@@ -1,15 +1,14 @@
-import {Route} from "react-router-dom";
-import Dashboard from "./page/dashboard"
+import { Route } from 'react-router-dom'
+import Dashboard from './page/dashboard'
 
-function App() {
-
-    return (
+function App () {
+  return (
         <div>
-            <Route path={"/"}>
+            <Route path={'/'}>
                 <Dashboard/>
             </Route>
         </div>
-    )
+  )
 }
 
 export default App

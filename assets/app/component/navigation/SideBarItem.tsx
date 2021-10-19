@@ -1,5 +1,3 @@
 export const SideBarItem = () => {
-
-
-    return (<div></div>)
+  return (<div>SideBarItem</div>)
 }
