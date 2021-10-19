@@ -34,3 +34,4 @@ public/assets
 
 #node packages
 node_modules/
+coverage/

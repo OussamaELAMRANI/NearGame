@@ -6,7 +6,8 @@
     "build": "tsc && vite build",
     "serve": "vite preview",
     "lint": "eslint assets/app/**/*.ts assets/app/**/*.tsx assets/app/**/*.js",
-    "lint:fix": "eslint assets/app/**/*.ts assets/app/**/*.tsx --fix"
+    "lint:fix": "eslint assets/app/**/*.ts assets/app/**/*.tsx --fix",
+    "test": "jest"
   },
   "dependencies": {
     "react": "^17.0.0",
@@ -14,6 +15,13 @@
     "react-router-dom": "^5.3.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@testing-library/dom": "^8.10.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.2",
     "@types/node": "^16.11.1",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -22,14 +30,18 @@
     "@typescript-eslint/parser": "^5.1.0",
     "@vitejs/plugin-react": "^1.0.0",
     "autoprefixer": "^10.3.7",
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.1",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^25.2.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.26.1",
+    "jest": "^27.3.1",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.17",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.3.0",
     "typescript": "^4.3.2",
     "vite": "^2.6.4"
   }

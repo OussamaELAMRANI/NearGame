@@ -26,5 +26,6 @@
     "./assets/app/**/*.ts",
     "./assets/app/**/*.d.ts",
     "./assets/app/**/*.tsx",
-  ]
+    "./assets/app/jest-setup.ts",
+  ],
 }
