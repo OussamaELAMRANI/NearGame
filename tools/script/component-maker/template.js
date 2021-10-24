@@ -7,16 +7,16 @@ export default {{ component }}
 `
 
 const testComponent = `
-import { render, cleanup } from '@testing-library/react'
+import { cleanup } from '@testing-library/react'
+import { create } from 'react-test-renderer'
 import {{ component }} from '../index'
 
 describe('{{ component }}.tsx', () => {
   afterEach(cleanup)
 
-  test('{{component}} render correctly !', () => {
-    const { getByText } = render(<{{ component }} />)
-
-    expect(getByText('{{component}}')).toBeInTheDocument()
+  it('should render correctly !', () => {
+    const elem = create(<{{ component }} />).toJSON()
+    expect(elem).toMatchSnapshot()
   })
 })
 `
