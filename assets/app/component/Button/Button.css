@@ -1,0 +1,35 @@
+.button {
+    @apply inline-flex items-center px-4 py-2
+    text-sm font-medium
+    border border-transparent rounded-md shadow-sm
+    bg-gray-70 hover:bg-gray-80 focus:ring-2 focus:ring-offset-2 focus:ring-gray-70
+    ;
+}
+
+.button.primary {
+    @apply text-white bg-coral-60 hover:bg-coral-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-coral-50;
+}
+
+.button.secondary {
+    @apply text-white bg-tail-80 hover:bg-tail-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tail-70;
+}
+
+.button.warning {
+    @apply text-white bg-orange-60 hover:bg-brown-70 focus:ring-2 focus:ring-offset-2 focus:ring-orange-40;
+}
+
+.button.lg {
+    @apply text-xl;
+}
+
+.button.xl {
+    @apply text-2xl
+}
+
+.button.base {
+    @apply text-base;
+}
+
+.button.sm {
+    @apply text-xs;
+}

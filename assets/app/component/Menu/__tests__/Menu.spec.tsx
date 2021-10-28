@@ -1,4 +1,5 @@
 import { render, cleanup } from '@testing-library/react'
+import 'tailwindcss/dist/tailwind.min.css'
 import Menu from '../index'
 
 describe('Menu.tsx', () => {
