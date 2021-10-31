@@ -11,6 +11,8 @@ const Button: FC<ButtonProps> = ({ children, variant = '', size = 'base', ...pro
 }
 
 Button.propTypes = {
-  variant: PropTypes.oneOf(['primary', 'secondary'])
+  variant: PropTypes.oneOf(['primary', 'secondary']),
+  size: PropTypes.oneOf(['sm', 'base', 'lg', 'xl']),
+  disabled: PropTypes.bool
 }
 export default Button

@@ -10,15 +10,8 @@ const dashboard = () => {
             <Link to={'/admin'}>Admin page</Link>
             <Link to={'/admin/game-type'} > Game Type List</Link>
             <Button size={'sm'}> Default Button </Button>
-            <Button> Default Button </Button>
-            <Button size={'lg'}> Default Button </Button>
-            <Button size={'xl'}> Default Button </Button>
-            <Button variant={'secondary'}> Secondary Button </Button>
-            <Button variant={'secondary'} size={'sm'}> Secondary Button </Button>
-            <Button variant={'primary'}> Primary Button </Button>
-            <Button variant={'primary'} size={'sm'}> Primary Button </Button>
-            <Button variant={'warning'}> Primary Button </Button>
-            <Button variant={'warning'} size={'sm'}> Primary Button </Button>
+            <Button variant="primary" disabled> Default Button </Button>
+
         </div>
         <div className="side-bar">
             <NavSideBar />

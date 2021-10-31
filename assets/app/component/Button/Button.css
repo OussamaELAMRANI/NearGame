@@ -33,3 +33,7 @@
 .button.sm {
     @apply text-xs;
 }
+
+.button[disabled]{
+    @apply cursor-not-allowed disabled:opacity-50;
+}
