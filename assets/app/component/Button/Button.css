@@ -37,3 +37,7 @@
 .button[disabled]{
     @apply cursor-not-allowed disabled:opacity-50;
 }
+
+.button svg{
+    @apply px-1.5 h-full
+}

@@ -2,6 +2,7 @@ import { Route, Link } from 'react-router-dom'
 import { GameType } from '@/page/games/game-type'
 import { NavSideBar } from '@/layout/side/NavSideBar'
 import Button from '@/component/Button'
+import { PlusIcon } from '@/icon/PlusIcon'
 
 const dashboard = () => {
   return (<div className={'dashboard '}>
@@ -10,7 +11,9 @@ const dashboard = () => {
             <Link to={'/admin'}>Admin page</Link>
             <Link to={'/admin/game-type'} > Game Type List</Link>
             <Button size={'sm'}> Default Button </Button>
-            <Button variant="primary" disabled> Default Button </Button>
+            <Button variant="primary">
+                <PlusIcon /> Default Button
+            </Button>
 
         </div>
         <div className="side-bar">
